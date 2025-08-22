@@ -141,10 +141,9 @@ plt.rcParams["axes.unicode_minus"] = False
 |---|---|---|
 | `pr0_data_handling.ipynb` | 데이터 로드, 정제, 정합성 점검, 조인/머지, 스키마 표준화 | `*_clean` 데이터프레임, (예) `_snapshots/olist_clean_bundle.pkl` |
 | `pr1_RFM.ipynb` | R/F/M 계산, 분위 기반 점수화, 세그먼트 라벨링(VVIP/VIP/고액고객 등) | `rfm` 테이블, 세그먼트 분포·시각화 |
-| `pr2_freight.ipynb` | 리드타임(평균·p90 등), 지연율, 월별 KPI 추이/대시보드 | 월별 KPI 표/그래프, SLA 관리 포인트 |
+| `pr2_freight.ipynb` | 리드타임(평균·p90 등), 지연율, 월별 KPI 추이/대시보드 | 월별 KPI 표/그래프, SLA 관리 포인트 | 상위 세그먼트 매출비중, 세그먼트별 **Top3 카테고리**, 실행 인사이트 |
 | `pr3_trend.ipynb` | 월 매출, MoM/YoY, (옵션) 월 단위 CAGR | 트렌드 라인/바, 성장률 표 |
 | `pr4_cycle.ipynb` | **Time‑to‑Peak 로리팝**, **매출가중 라이프사이클 스택바** | 카테고리별 초기형/장기형 구분 그래프 |
-| `pr5_vip.ipynb` | 상위 세그먼트 매출비중, 세그먼트별 **Top3 카테고리**, 실행 인사이트 | 도넛/바 차트, 액션 아이템 목록 |
 
 > 시각화는 발표용 기준으로 구성(폰트·라벨·범례 최적화).
 
@@ -157,7 +156,7 @@ plt.rcParams["axes.unicode_minus"] = False
 3. **물류 KPI**: `pr2_freight.ipynb` 실행 → 리드타임/지연율 추이 산출  
 4. **트렌드**: `pr3_trend.ipynb` 실행 → 월 매출 & 성장률  
 5. **사이클**: `pr4_cycle.ipynb` 실행 → Time‑to‑Peak & 라이프사이클  
-6. **VIP 인사이트**: `pr5_vip.ipynb` 실행 → 상위 세그먼트 비중 & Top3 카테고리 + 제안
+6. **VIP 인사이트**: `pr1_RFM.ipynb` 실행 → 상위 세그먼트 비중 & Top3 카테고리 + 제안
 
 > 데이터 경로/환경 변수는 노트북 상단 셀(또는 `/src/config.py`)에서 관리하도록 권장.
 
@@ -185,7 +184,6 @@ plt.rcParams["axes.unicode_minus"] = False
 ## 👥 라이선스
 
 - **배성우**: _SEONGU BAE_ (Solo Project)  
-
 
 ---
 
